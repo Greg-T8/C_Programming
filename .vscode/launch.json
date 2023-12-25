@@ -2,7 +2,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C/C++: gcc-11 build and debug active file",
+            "name": "LLDB: Debug",
+            "type": "lldb",
+            "request": "launch",
+            "stopOnEntry": false,
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "preLaunchTask": "GCC Build",
+        },
+        {
+            "name": "GDB: Debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -11,7 +21,7 @@
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb",
+            "MIMode": "gdb", // MIMode: "Machine Interface Mode"
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -24,8 +34,9 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: gcc-11 build active file",
+            "preLaunchTask": "GCC Build",
             "miDebuggerPath": "/usr/bin/gdb"
-        }
+        },
+
     ]
 }
