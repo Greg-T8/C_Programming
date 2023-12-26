@@ -22,8 +22,11 @@
             "presentation": {
                 "echo": true,
                 "reveal": "silent",
+                "revealProblems": "onProblem",
                 "focus": false,
                 "panel": "shared",
+                "clear": true,
+                "showReuseMessage": false,
             },
             "group": {
                 "kind": "build",
@@ -40,9 +43,12 @@
             },
             "presentation": {
                 "echo": true,
-                "reveal": "always",
-                "focus": true,
+                "reveal": "silent",
+                "revealProblems": "onProblem",
+                "focus": false,
                 "panel": "shared",
+                "clear": false,
+                "showReuseMessage": false,
             },
             "dependsOn": "GCC Build",
             "problemMatcher": [],
