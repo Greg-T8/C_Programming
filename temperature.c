@@ -2,7 +2,7 @@
 
 /* print Fahrenheit-Celsius table for fahr = 0,20,...,300 */
 
-main()
+int main()
 {
     int fahr, celsius;
     int lower, uppper, step;
@@ -15,7 +15,7 @@ main()
     while (fahr <= uppper)
     {
         celsius = 5 * (fahr - 32) / 9;
-        printf("%d\t%d\n", fahr, celsius); // \t is a tab character
+        printf("%10d\t%10d\n", fahr, celsius); // \t is a tab character
         fahr = fahr + step;
     }
 }
