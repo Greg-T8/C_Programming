@@ -25,7 +25,7 @@
                 "revealProblems": "onProblem",
                 "focus": false,
                 "panel": "shared",
-                "clear": true,
+                "clear": false,
                 "showReuseMessage": false,
             },
             "group": {
@@ -38,12 +38,12 @@
             "label": "GCC Run",
             "command": "${fileDirname}/${fileBasenameNoExtension}",
             "group": {
-                "kind": "test",
+                "kind": "none",
                 "isDefault": true
             },
             "presentation": {
                 "echo": true,
-                "reveal": "silent",
+                "reveal": "always",
                 "revealProblems": "onProblem",
                 "focus": false,
                 "panel": "shared",
