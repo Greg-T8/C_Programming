@@ -1,8 +1,8 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
             "label": "GCC Build",
+            "type": "cppbuild",
             "command": "/usr/bin/gcc",
             "args": [
                 "-fdiagnostics-color=always",
@@ -30,17 +30,13 @@
             },
             "group": {
                 "kind": "build",
-                "isDefault": true
+                "isDefault": false
             },
         },
         {
-            "type": "shell",
             "label": "GCC Run",
+            "type": "shell",
             "command": "${fileDirname}/${fileBasenameNoExtension}",
-            "group": {
-                "kind": "none",
-                "isDefault": true
-            },
             "presentation": {
                 "echo": true,
                 "reveal": "always",
@@ -52,6 +48,10 @@
             },
             "dependsOn": "GCC Build",
             "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ],
     "version": "2.0.0"

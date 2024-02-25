@@ -9,7 +9,7 @@
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "preLaunchTask": "GCC Build",
+            //"preLaunchTask": "GCC Build",
         },
         {
             "name": "GDB: Debug",
