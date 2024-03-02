@@ -7,36 +7,22 @@
             "request": "launch",
             "stopOnEntry": false,
             "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
+            "internalConsoleOptions": "neverOpen",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            //"preLaunchTask": "GCC Build",
+            "preLaunchTask": "GCC Build"
         },
         {
             "name": "GDB: Debug",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
-            "args": [],
-            "stopAtEntry": false,
             "cwd": "${fileDirname}",
-            "environment": [],
             "externalConsole": false,
-            "MIMode": "gdb", // MIMode: "Machine Interface Mode"
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ],
+            "internalConsoleOptions": "neverOpen",
+            "showDisplayString": false,
+            "MIMode": "gdb",
             "preLaunchTask": "GCC Build",
             "miDebuggerPath": "/usr/bin/gdb"
         },
-
     ]
 }
