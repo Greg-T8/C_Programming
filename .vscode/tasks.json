@@ -13,7 +13,7 @@
                 "-Wall",
                 "-Wextra",
                 "-Wpedantic",
-                "-std=c17"
+                "-std=c90"
             ],
             "options": {
                 "cwd": "${fileDirname}"
