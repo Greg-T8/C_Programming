@@ -8,14 +8,14 @@
             "stopOnEntry": false,
             "console": "internalConsole",
             "internalConsoleOptions": "neverOpen",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "preLaunchTask": "GCC Build"
         },
         {
             "name": "GDB: Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "cwd": "${fileDirname}",
             "externalConsole": false,
             "internalConsoleOptions": "neverOpen",
